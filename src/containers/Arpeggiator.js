@@ -23,7 +23,7 @@ class Arpeggiator extends Component {
       synthChoices: ['AMSynth', 'DuoSynth', 'FMSynth', 'MembraneSynth', 'MonoSynth', 'PluckSynth', 'PolySynth', 'Default'],
       durationChoices: ['4n', '8n', '16n', '32n'],
       eventID: 0,
-      bpm: 90,
+      bpm: 120,
       swing: 0.0,
       gain: 1.0,
       recDest: Tone.context.createMediaStreamDestination(),
@@ -262,7 +262,7 @@ class Arpeggiator extends Component {
                 <p>BPM</p>
               </div>
               <div className="slider-container">
-                <BPMSlider className="bpm-slider" updateBPM={this.updateBPM} />
+                <BPMSlider className="bpm-slider" updateBPM={this.updateBPM} bpm={this.state.bpm}/>
               </div>
               <div className="slider-value">
                 <p>SWING</p>

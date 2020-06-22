@@ -8,7 +8,7 @@ const BPMSlider = (props) => {
 
     return (
       <div>
-        <input className="bpm-slider" type="range" min="1" max="180" step="1" onChange={handleChange}>
+        <input className="bpm-slider" type="range" min="1" max="180" step="1" onChange={handleChange} value={props.bpm}>
         </input>
       </div>
     )
