@@ -8,6 +8,10 @@
   margin-top: 20px
 }
 
+label:hover, button:hover, select:hover, .controls-container {
+  cursor: pointer;
+}
+
 @font-face {
   font-family: 'digital';
   src: url('../assets/fonts/digital.ttf');
@@ -237,6 +241,13 @@ button[name="play"] {
 button[name="play"]:focus {
   outline: 0;
   border-color: transparent transparent transparent #67FF6C;
+  animation: play-flash 1s linear infinite;
+}
+
+@keyframes play-flash {
+  50% {
+    border-color: transparent transparent transparent transparent;
+  }
 }
 
 .sub-controls {
@@ -257,6 +268,13 @@ button[name="record"]:focus {
   background-color: #FF6A63;
   border: solid #FF6A63;
   outline: none;
+  animation: rec-flash 1s linear infinite;
+}
+
+@keyframes rec-flash {
+  50% {
+    opacity: 0;
+  }
 }
 
 button[name="stop"] {
