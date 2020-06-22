@@ -1,0 +1,7 @@
+.synth-select, .duration-select {
+  background-color: black;
+  color: white;
+  float: left;
+  margin: 8px 0px 0px 0px;
+  width: 95px;
+}
